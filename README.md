@@ -8,7 +8,7 @@ Below is her original readme
 A site for easily finding and accessing my notes and study guides from my time at MIT and Buffalo Grove High School
 
 ### Where can I access the website?
-https://lrylander.github.io/linnear/build/
+~~https://lrylander.github.io/linnear/build/~~ (please use new URL: https://nabilbaugher.github.io/linnear/build/)
 
 ### When will it be updated?
 The site currently demonstrates basic functionality necessary to find and inspect notes.  Features that will be implemented soon include:
