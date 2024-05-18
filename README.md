@@ -1,4 +1,4 @@
-# Note: I did not create this, it is a fork from @ljtrevino
+# Note: I did not create this, it is a fork from [@ljtrevino](https://github.com/ljtrevino)
 (forked to deploy once again so the freshmen can benefit!)
 Below is her original readme
 
