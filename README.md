@@ -20,5 +20,3 @@ The site currently demonstrates basic functionality necessary to find and inspec
 ### Helpful commands
 * `npm start` to develop locally on localhost:8080
 * `npm run build` to build and deploy a new version of the site
-
-
