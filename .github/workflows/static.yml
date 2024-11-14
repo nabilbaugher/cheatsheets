@@ -23,8 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: |
+          rm -rf node_modules
+          rm -f package-lock.json
           npm install -g node-sass@4.14.1
-          npm ci
+          npm install
 
       - name: Build
         run: |
