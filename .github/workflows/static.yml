@@ -12,22 +12,26 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04 # Using older Ubuntu for better compatibility with legacy packages
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "14" # Using Node 14 for better compatibility with older packages
+          node-version: "14"
 
       - name: Install dependencies
         run: |
-          npm install -g node-sass@4.14.1
-          npm ci
+          npm cache clean --force
+          rm -rf node_modules
+          rm -f package-lock.json
+          npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run clean
+          NODE_ENV=production npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -35,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./build" # This should match your webpack output directory
+          path: "./build"
 
   deploy:
     needs: build
