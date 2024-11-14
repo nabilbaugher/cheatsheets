@@ -47,7 +47,7 @@
     "simple-line-icons": "^2.4.1"
   },
   "scripts": {
-    "dev": "webpack -d --progress --watch",
+    "dev": "webpack -d --progress --no-watch",
     "start": "webpack-dev-server --env.dev --open --hot --progress --colors --inline",
     "build": "webpack -p --progress",
     "clean": "rimraf ./build"
