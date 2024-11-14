@@ -7,7 +7,7 @@
   "copyright": "Copyright 2017 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://nabilbaugher.github.io/cheatsheets",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
