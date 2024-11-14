@@ -22,7 +22,7 @@ module.exports = {
     filename: "[name].bundle.js",
     publicPath: "./", // Add this line
   },
-  watch: true,
+  watch: process.env.NODE_ENV !== "production",
   devServer: {
     contentBase: BUILD_DIR,
     //   port: 9001,
